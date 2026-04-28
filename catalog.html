@@ -1,0 +1,215 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Catalog | RoboTech</title>
+
+<style>
+
+.btn-home-arrow {
+    background-color: transparent;
+    color: #00d4ff;
+    border: 2px solid #00d4ff;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.arrow-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+
+body {
+  background-color: #121417;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+
+.robot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.robot-card {
+  display: flex;
+  align-items: center;
+  background: #1a1d21;
+  border: 1px solid #2c3036;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.robot-card:hover {
+  transform: translateY(-5px);
+  border-color: #00d4ff;
+}
+
+.robot-card img {
+  width: 40%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.robot-info {
+  padding: 20px;
+}
+
+.robot-info h2 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.robot-info p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #00d4ff;
+  margin-top: 40px;
+}
+
+/* GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin: 40px;
+}
+
+/* CARD */
+.card {
+  background: #1a1d21;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #2c3036;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00d4ff;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* TEXT */
+.card h3 {
+  margin-top: 10px;
+  color: #00d4ff;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+  background: #00d4ff;
+  color: #121417;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00aacc;
+}
+
+</style> 
+
+<div class="container mt-4">
+  <a href="index.html" class="btn btn-home-arrow">
+    <span class="arrow-icon">←</span> Home
+  </a>
+</div>
+
+</head>
+<body>
+
+<div class="container mt-5" id="robots">
+  <h1 class="text-center">Our Robots</h1>
+
+  <div class="robot-list">
+
+    <div class="robot-card">
+      <img src="https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2023/12/Tesla-Optimus-Gen-2-Humanoid-Robot-1-1024x683.jpg">
+      <div class="robot-info">
+        <h2>Atlas-X</h2>
+        <p>Atlas-X is a powerful humanoid robot built for strength and precision. It can perform complex physical tasks with ease. Its advanced AI allows it to adapt quickly to new environments. This robot is perfect for heavy-duty work and innovation.</p>
+      </div>
+    </div>
+
+    <div class="robot-card">
+      <img src="https://cdn.pixabay.com/photo/2023/02/22/18/33/robot-7807181_1280.jpg">
+      <div class="robot-info">
+        <h2>Neo Bot</h2>
+        <p>Neo Bot is a compact and intelligent assistant robot. It is designed for everyday tasks and home support. The robot uses smart sensors to move safely around spaces. It is easy to use and perfect for beginners.</p>
+      </div>
+    </div>
+
+    <div class="robot-card">
+      <img src="https://img.freepik.com/premium-photo/advanced-autonomous-robot-drone-using-artificial-intelligence-ai-sensors-is-working-agricultural-field_734610-15546.jpg">
+      <div class="robot-info">
+        <h2>Drone AI</h2>
+        <p>Drone AI is built for aerial tasks and smart monitoring. It can scan large areas quickly using advanced sensors. The drone uses AI to track and analyze data in real time. It is ideal for farming, security, and exploration.</p>
+      </div>
+    </div>
+
+    <div class="robot-card">
+      <img src="https://cdn.pixabay.com/photo/2023/11/01/17/12/robot-8358415_960_720.jpg">
+      <div class="robot-info">
+        <h2>Helper Bot</h2>
+        <p>Helper Bot is designed to assist with daily activities and simple tasks. It can carry items and respond to voice commands. The robot is friendly and built for easy interaction. It is perfect for homes and small businesses.</p>
+      </div>
+    </div>
+
+    <div class="robot-card">
+      <img src="https://smh-nj.com/wp-content/uploads/2025/11/ai-robot-concept-advanced-equipment-medical-field-surgical-equipment-using-robots-operating-room-min-scaled.jpg">
+      <div class="robot-info">
+        <h2>Medical Unit</h2>
+        <p>Medical Unit is a highly advanced robot for healthcare environments. It can assist in surgeries and patient monitoring. The robot uses precise tools and intelligent systems for accuracy. It helps improve safety and efficiency in hospitals.</p>
+      </div>
+    </div>
+
+    <div class="robot-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.ukEFIO5NrDpJHBDFiAft6QHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <div class="robot-info">
+        <h2>Android X</h2>
+        <p>Android X is a top-tier humanoid robot with extreme intelligence. It can think, learn, and interact like a human. The robot is built with the latest AI and robotics technology. It represents the future of robotics and innovation.</p>
+      </div>
+    </div>
+
+  </div>
+</div>

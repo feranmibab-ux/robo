@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robotics Showcase | RoboTech</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+
+.btn-home-arrow {
+    background-color: transparent;
+    color: #00d4ff;
+    border: 2px solid #00d4ff;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.arrow-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+
+.card img {
+  width: 100%;
+  height: 220px;      
+  object-fit: cover;    
+  border-radius: 4px;
+}
+
+.checkout-btn {
+  background: #00d4ff;
+  color: #121417;
+  border: none;
+  padding: 12px;
+  width: 83%;
+  height: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+
+
+.custom-footer {
+  background: linear-gradient(0deg, rgba(0, 212, 255, 0.05), #121417);
+  padding: 60px 0 20px;
+  border-top: 1px solid #1a1d21;
+}
+
+.footer-logo {
+  color: #00d4ff;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.footer-heading {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00d4ff;
+}
+
+.socials a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00d4ff;
+}
+
+.footer-bottom {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+
+body {
+    background-color: #121417;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #1a1d21 !important;
+    border-bottom: 2px solid #00d4ff;
+}
+
+.navbar-brand, .nav-link {
+    color: #00d4ff !important;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.description-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.img-showcase {
+    border: 1px solid #2c3036;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.img-showcase:hover {
+    border-color: #00d4ff;
+    transform: translateY(-5px);
+}
+
+.uniform-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.bottom-info-section {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid #00d4ff;
+    border-radius: 0 15px 15px 0;
+}
+
+.footer-glow {
+    background: linear-gradient(0deg, rgba(0, 212, 255, 0.05) 0%, rgba(18, 20, 23, 1) 100%);
+    padding: 80px 0 40px 0;
+    border-top: 1px solid #1a1d21;
+}
+
+
+.product-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.card { background:#1a1d21; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.4); }
+.card img { width:100%; }
+.price { color:#00d4ff; }
+.card button { background:#00d4ff; border:none; width:100%; padding:10px; }
+.container-box { background:#1a1d21; padding:20px; border:1px solid #00d4ff; }
+</style>
+
+<div class="container mt-4">
+  <a href="index.html" class="btn btn-home-arrow">
+    <span class="arrow-icon">←</span> Home
+  </a>
+</div>
+
+
+<div class="container mt-5" id="shop">
+<h1 class="text-center">Buy Robots</h1>
+
+<div class="product-grid">
+<div class="card"><img src="https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2023/12/Tesla-Optimus-Gen-2-Humanoid-Robot-1-1024x683.jpg"><h3>Atlas-X</h3><p class="price">$92,578</p><button onclick="buy('Atlas-X',92578)">Buy</button></div>
+<div class="card"><img src="https://cdn.pixabay.com/photo/2023/02/22/18/33/robot-7807181_1280.jpg"><h3>Neo Bot</h3><p class="price">$8,499</p><button onclick="buy('Neo Bot',8499)">Buy</button></div>
+<div class="card"><img src="https://img.freepik.com/premium-photo/advanced-autonomous-robot-drone-using-artificial-intelligence-ai-sensors-is-working-agricultural-field_734610-15546.jpg"><h3>Drone AI</h3><p class="price">$15,200</p><button onclick="buy('Drone AI',15200)">Buy</button></div>
+<div class="card"><img src="https://cdn.pixabay.com/photo/2023/11/01/17/12/robot-8358415_960_720.jpg"><h3>Helper Bot</h3><p class="price">$67,50</p><button onclick="buy('Helper Bot',6750)">Buy</button></div>
+<div class="card"><img src="https://smh-nj.com/wp-content/uploads/2025/11/ai-robot-concept-advanced-equipment-medical-field-surgical-equipment-using-robots-operating-room-min-scaled.jpg"><h3>Medical Unit</h3><p class="price">$18,999</p><button onclick="buy('Medical Unit',18999)">Buy</button></div>
+<div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.ukEFIO5NrDpJHBDFiAft6QHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"><h3>Android X</h3><p class="price">$1,250,000</p><button onclick="buy('Android X',1215000)">Buy</button></div>
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-md-8">
+<div class="container-box">
+<h3>Checkout</h3>
+<input type="text" placeholder="Full Name">
+<input type="text" placeholder="Email">
+<input type="text" placeholder="Address">
+<input type="text" placeholder="Card Number">
+<br>
+<br>
+<button class="checkout-btn">Complete Purchase</button>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="container-box">
+<h4>Cart</h4>
+<div id="cart"></div>
+<hr>
+<p>Total: $<span id="total">0</span></p>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+let total=0;
+function buy(name,price){
+let cart=document.getElementById('cart');
+let item=document.createElement('p');
+item.innerText=name+" - $"+price;
+cart.appendChild(item);
+total+=price;
+document.getElementById('total').innerText=total;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
